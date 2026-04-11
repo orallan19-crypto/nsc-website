@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>NOSCAM — The Anti-Fraud Cryptocurrency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="nsc.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <div class="ticker-item">🛡️ NOSCAM TOKEN <span class="tick-badge">PRESALE LIVE</span></div>
+    <div class="ticker-item">💠 N$C Price: $0.0042 <span class="tick-badge">+24.6%</span></div>
+    <div class="ticker-item">🚨 Scams Reported Today: 1,247</div>
+    <div class="ticker-item">🔒 Total Fraud Prevented: $4.2M</div>
+    <div class="ticker-item">⚡ Stage 3 of 8 — Only 27% Remaining</div>
+    <div class="ticker-item">🌍 Community: 94,000+ Members</div>
+    <div class="ticker-item">✅ CertiK Audited · KYC Verified</div>
+    <div class="ticker-item">🛡️ NOSCAM TOKEN <span class="tick-badge">PRESALE LIVE</span></div>
+    <div class="ticker-item">💠 $NSCM Price: $0.0042 <span class="tick-badge">+24.6%</span></div>
+    <div class="ticker-item">🚨 Scams Reported Today: 1,247</div>
+    <div class="ticker-item">🔒 Total Fraud Prevented: $4.2M</div>
+    <div class="ticker-item">⚡ Stage 3 of 8 — Only 27% Remaining</div>
+    <div class="ticker-item">🌍 Community: 94,000+ Members</div>
+    <div class="ticker-item">✅ CertiK Audited · KYC Verified</div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon"><img src="coin.jpg" alt=""></div>
+      <span class="logo-text"><em>NOSCAMCOIN</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">About <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#about">Our Mission</a></li>
+          <li><a href="#whitepaper">Whitepaper</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+      </li>
+      <li><a href="#buy">Buy $NSCM</a></li>
+      <li><a href="#">Fight Scams <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#report">Report a Scam <span class="dd-tag">NEW</span></a></li>
+          <li><a href="#">Scam Database</a></li>
+          <li><a href="#">Fraud Alerts</a></li>
+          <li><a href="#">Education Hub</a></li>
+          <li><a href="#">Verify a Project</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Community <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#socials">Socials</a></li>
+          <li><a href="#">Ambassadors</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </li>
+      <li><a href="#roadmap">Roadmap</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#report" class="btn-ghost">🚨 Report Scam</a>
+      <a href="#buy" class="btn-primary"><span>Buy $NSCM</span></a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li class="has-sub"><a href="#" onclick="msub(event,this)">About <span>▾</span></a><div class="m-sub"><a href="#about">Mission</a><a href="#whitepaper">Whitepaper</a><a href="#tokenomics">Tokenomics</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a></div></li>
+    <li><a href="#buy">Buy $NSCM</a></li>
+    <li class="has-sub"><a href="#" onclick="msub(event,this)">Fight Scams <span>▾</span></a><div class="m-sub"><a href="#report">Report a Scam</a><a href="#">Scam Database</a><a href="#">Fraud Alerts</a><a href="#">Education Hub</a></div></li>
+    <li class="has-sub"><a href="#" onclick="msub(event,this)">Community <span>▾</span></a><div class="m-sub"><a href="#socials">Socials</a><a href="#">Blog</a><a href="#faq">FAQs</a></div></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+  </ul>
+  <a href="#buy" class="mob-cta" onclick="closeMob()">🚀 Buy $NSCM Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-nebula"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-orb">
+    <div class="orb-ring"></div><div class="orb-ring"></div><div class="orb-ring"></div><div class="orb-ring"></div>
+    <div class="orb-core">⛨</div>
+  </div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">🛡️ &nbsp;World's First Anti-Fraud Crypto</div>
+      <h1 class="hero-h1">Don't Get Played.<br><span class="shimmer">Fight Back.</span>Build Wealth.</h1>
+      <p class="hero-sub">$NSCM is the cryptocurrency powered by truth. Every transaction fights internet crime — funding scam investigations, compensating victims, and protecting the next generation of crypto users.</p>
+      <div class="hero-btns">
+        <a href="#buy" class="btn-primary" style="padding:14px 30px;font-size:.7rem"><span>🚀 Buy $NSCM — Stage 3</span></a>
+        <a href="#whitepaper" class="btn-ghost" style="padding:14px 30px;font-size:.78rem">📄 Whitepaper</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><span class="hstat-val">$4.2M <em>↑</em></span><span class="hstat-lbl">Fraud Prevented</span></div>
+        <div class="hstat"><span class="hstat-val">94K+</span><span class="hstat-lbl">Community</span></div>
+        <div class="hstat"><span class="hstat-val">$1.87M</span><span class="hstat-lbl">Raised</span></div>
+        <div class="hstat"><span class="hstat-val">$0.0042</span><span class="hstat-lbl">Token Price</span></div>
+      </div>
+    </div>
+    <div class="presale-card" id="buy">
+      <div class="pc-stage">⚡ STAGE 3 OF 8 — LIVE NOW</div>
+      <div class="pc-price">$0.0042 <span style="font-size:.7rem;color:var(--muted)">/ $NSCM</span></div>
+      <div class="pc-price-sub">Next stage: <strong>$0.0058</strong> — Lock in today's price</div>
+      <div class="progress-labels"><span>Stage Progress</span><span style="color:var(--cyan2)">73% SOLD</span></div>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+      <div class="pc-raised">
+        <div class="pc-stat"><div class="pc-stat-lbl">Raised</div><div class="pc-stat-val">$1,874,220</div></div>
+        <div class="pc-stat"><div class="pc-stat-lbl">Tokens Sold</div><div class="pc-stat-val">446M NSCM</div></div>
+        <div class="pc-stat"><div class="pc-stat-lbl">Remaining</div><div class="pc-stat-val">164M NSCM</div></div>
+        <div class="pc-stat"><div class="pc-stat-lbl">Holders</div><div class="pc-stat-val">8,912</div></div>
+      </div>
+      <div class="pc-methods"><span class="pc-method">ETH</span><span class="pc-method">USDT</span><span class="pc-method">BNB</span><span class="pc-method">USDC</span><span class="pc-method">CARD</span></div>
+      <button class="buy-btn" onclick="alert('Connect your wallet to purchase $NSCM tokens.')">🛡️ BUY $NSCM NOW</button>
+      <p class="pc-note">✅ CertiK Audited &nbsp;·&nbsp; KYC Verified &nbsp;·&nbsp; 40% unlock at TGE</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="section-inner" style="padding:0">
+    <div class="stats-row">
+      <div class="stat-cell fade-up"><div class="stat-val">$1.87<span>M</span></div><div class="stat-lbl">Total Raised</div></div>
+      <div class="stat-cell fade-up"><div class="stat-val">446<span>M</span></div><div class="stat-lbl">Tokens Sold</div></div>
+      <div class="stat-cell fade-up"><div class="stat-val">18,400<span>+</span></div><div class="stat-lbl">Scams Reported</div></div>
+      <div class="stat-cell fade-up"><div class="stat-val">$4.2<span>M</span></div><div class="stat-lbl">Fraud Prevented</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- MISSION -->
+<section class="mission" id="about">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Why We Exist</span>
+    <h2 class="section-title">Crypto Built to Fight Crime</h2>
+    <p class="section-sub">Every day, billions are stolen through rug pulls, phishing, and fraud. $NSCM turns Web3 power against criminals — rewarding truth, funding justice, protecting victims.</p>
+    <div class="mission-grid">
+      <div class="mission-card fade-up"><div class="mc-icon mc-a">🚨</div><h3>Scam Reporting DAO</h3><p>Community-governed scam database. Token holders vote to verify, flag, and blacklist fraudulent wallets, projects, and individuals worldwide.</p></div>
+      <div class="mission-card fade-up"><div class="mc-icon mc-b">🤖</div><h3>AI Fraud Intelligence</h3><p>Machine-learning blockchain analytics tracks wallet behaviours, scam patterns, and suspicious transactions. Public alerts saved $4.2M in Q1 alone.</p></div>
+      <div class="mission-card fade-up"><div class="mc-icon mc-c">💸</div><h3>Victim Compensation Fund</h3><p>3% of every $NSCM transaction flows to a DAO-managed compensation pool that reimburses verified scam victims automatically.</p></div>
+      <div class="mission-card fade-up"><div class="mc-icon mc-d">🎓</div><h3>Fraud Education Hub</h3><p>Free Web3 safety courses, scam pattern libraries, and browser extension warnings. Knowledge is the first line of defence.</p></div>
+      <div class="mission-card fade-up"><div class="mc-icon mc-a">⚖️</div><h3>Legal Cooperation Network</h3><p>Partnered with cybercrime units across 12 countries. We share verified intelligence to help law enforcement prosecute fraudsters.</p></div>
+      <div class="mission-card fade-up"><div class="mc-icon mc-b">🏆</div><h3>Whistleblower Rewards</h3><p>Report a verified scam and earn $NSCM bounties. Our program turns every honest citizen into a funded, on-chain fraud fighter.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / WHITEPAPER -->
+<section style="padding:84px 24px" id="whitepaper">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="ai-brain">
+          <svg class="brain-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="bg2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#7c3aed" stop-opacity=".14"/><stop offset="100%" stop-color="#04030f" stop-opacity="0"/></radialGradient>
+              <filter id="gf"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <circle cx="200" cy="200" r="180" fill="url(#bg2)"/>
+            <circle cx="200" cy="200" r="160" stroke="#7c3aed" stroke-width=".5" stroke-dasharray="4 8" opacity=".4"/>
+            <circle cx="200" cy="200" r="130" stroke="#06b6d4" stroke-width=".5" stroke-dasharray="3 6" opacity=".3"/>
+            <circle cx="200" cy="200" r="100" stroke="#9d5cf6" stroke-width=".5" opacity=".25"/>
+            <g filter="url(#gf)">
+              <circle cx="200" cy="60" r="6" fill="#7c3aed"/><circle cx="320" cy="130" r="5" fill="#06b6d4"/><circle cx="320" cy="270" r="5" fill="#7c3aed"/><circle cx="200" cy="340" r="6" fill="#9d5cf6"/><circle cx="80" cy="270" r="5" fill="#06b6d4"/><circle cx="80" cy="130" r="5" fill="#7c3aed"/>
+              <circle cx="200" cy="120" r="5" fill="#c084fc"/><circle cx="270" cy="160" r="4" fill="#22d3ee"/><circle cx="270" cy="240" r="4" fill="#c084fc"/><circle cx="200" cy="280" r="5" fill="#22d3ee"/><circle cx="130" cy="240" r="4" fill="#c084fc"/><circle cx="130" cy="160" r="4" fill="#22d3ee"/>
+              <circle cx="200" cy="200" r="20" fill="#7c3aed" opacity=".8"/><circle cx="200" cy="200" r="12" fill="#c084fc"/>
+            </g>
+            <g stroke="#7c3aed" stroke-width=".7" opacity=".3">
+              <line x1="200" y1="60" x2="320" y2="130"/><line x1="320" y1="130" x2="320" y2="270"/><line x1="320" y1="270" x2="200" y2="340"/><line x1="200" y1="340" x2="80" y2="270"/><line x1="80" y1="270" x2="80" y2="130"/><line x1="80" y1="130" x2="200" y2="60"/>
+              <line x1="200" y1="120" x2="270" y2="160"/><line x1="270" y1="160" x2="270" y2="240"/><line x1="270" y1="240" x2="200" y2="280"/><line x1="200" y1="280" x2="130" y2="240"/><line x1="130" y1="240" x2="130" y2="160"/><line x1="130" y1="160" x2="200" y2="120"/>
+              <line x1="200" y1="120" x2="200" y2="200"/><line x1="270" y1="160" x2="200" y2="200"/><line x1="270" y1="240" x2="200" y2="200"/><line x1="200" y1="280" x2="200" y2="200"/><line x1="130" y1="240" x2="200" y2="200"/><line x1="130" y1="160" x2="200" y2="200"/>
+            </g>
+            <circle cx="200" cy="200" r="30" stroke="#7c3aed" stroke-width="1" opacity=".5"><animate attributeName="r" from="20" to="80" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" from=".5" to="0" dur="3s" repeatCount="indefinite"/></circle>
+            <circle cx="200" cy="200" r="30" stroke="#06b6d4" stroke-width="1" opacity=".4"><animate attributeName="r" from="20" to="120" dur="3s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" from=".4" to="0" dur="3s" begin="1s" repeatCount="indefinite"/></circle>
+            <text x="200" y="210" text-anchor="middle" font-size="22" fill="white" opacity=".9">⛨</text>
+          </svg>
+        </div>
+        <div class="anode-grid">
+          <div class="anode"><div class="anode-val">ERC-20</div><div class="anode-lbl">Standard</div></div>
+          <div class="anode"><div class="anode-val">10B</div><div class="anode-lbl">Supply</div></div>
+          <div class="anode"><div class="anode-val" style="color:var(--green)">✅</div><div class="anode-lbl">CertiK Audit</div></div>
+          <div class="anode"><div class="anode-val" style="color:var(--green)">✅</div><div class="anode-lbl">KYC Verified</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="divider"></div>
+        <span class="tag">The NOSCAM Vision</span>
+        <h2 class="section-title">A Cryptocurrency with a Conscience</h2>
+        <p class="section-sub" style="margin-bottom:16px">$NSCM isn't just a token — it's a movement. Built on Ethereum with cross-chain bridges to BNB Chain and Polygon, NOSCAM combines DeFi utility with real-world anti-fraud infrastructure.</p>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.95rem;color:var(--muted);line-height:1.8;margin-bottom:24px">The whitepaper outlines the full technical architecture, fraud detection algorithms, DAO governance model, victim compensation mechanics, and 4-year roadmap. Peer-reviewed by cybersecurity experts and blockchain engineers across 6 countries.</p>
+        <a href="#" class="wp-card"><div class="wp-icon">📄</div><div class="wp-info"><strong>NOSCAM Whitepaper v2.1</strong><span>Full technical documentation · 84 pages · PDF</span></div><span class="wp-arrow">↗</span></a>
+        <a href="#" class="wp-card"><div class="wp-icon" style="background:rgba(16,185,129,.1)">📋</div><div class="wp-info"><strong>Litepaper — Quick Overview</strong><span>Plain-English summary · 12 pages · PDF</span></div><span class="wp-arrow">↗</span></a>
+        <a href="#" class="wp-card"><div class="wp-icon" style="background:rgba(245,158,11,.1)">🔒</div><div class="wp-info"><strong>CertiK Security Audit Report</strong><span>Smart contract audit · Verified clean</span></div><span class="wp-arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOKENOMICS -->
+<section class="tokenomics" id="tokenomics">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Token Distribution</span>
+    <h2 class="section-title">$NSCM Tokenomics</h2>
+    <p class="section-sub">Total supply: <strong style="color:var(--white)">10,000,000,000 $NSCM</strong> — structured for long-term growth, community ownership, and sustained anti-fraud operations.</p>
+    <div class="tok-grid">
+      <div>
+        <div class="tok-chart-wrap">
+          <svg class="tok-donut" viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#7c3aed" stroke-width="3.8" stroke-dasharray="40 60" stroke-dashoffset="25"/>
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#06b6d4" stroke-width="3.8" stroke-dasharray="20 80" stroke-dashoffset="-15"/>
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#9d5cf6" stroke-width="3.8" stroke-dasharray="15 85" stroke-dashoffset="-35"/>
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#10b981" stroke-width="3.8" stroke-dasharray="12 88" stroke-dashoffset="-50"/>
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#f59e0b" stroke-width="3.8" stroke-dasharray="8 92" stroke-dashoffset="-62"/>
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#ec4899" stroke-width="3.8" stroke-dasharray="5 95" stroke-dashoffset="-70"/>
+          </svg>
+          <div class="tok-center"><div class="tok-cv">10B</div><div class="tok-cl">Total Supply</div></div>
+        </div>
+      </div>
+      <ul class="tok-list">
+        <li class="tok-item"><div class="tok-dot" style="background:#7c3aed"></div><div style="flex:1"><div class="tok-nm">Presale</div><div class="tok-sub">4,000,000,000 NSCM</div></div><div class="tok-bar-w"><div class="tok-bar" style="width:40%;background:#7c3aed"></div></div><span class="tok-pct">40%</span></li>
+        <li class="tok-item"><div class="tok-dot" style="background:#06b6d4"></div><div style="flex:1"><div class="tok-nm">Victim Compensation Fund</div><div class="tok-sub">2,000,000,000 NSCM</div></div><div class="tok-bar-w"><div class="tok-bar" style="width:20%;background:#06b6d4"></div></div><span class="tok-pct">20%</span></li>
+        <li class="tok-item"><div class="tok-dot" style="background:#9d5cf6"></div><div style="flex:1"><div class="tok-nm">Ecosystem & Rewards</div><div class="tok-sub">1,500,000,000 NSCM</div></div><div class="tok-bar-w"><div class="tok-bar" style="width:15%;background:#9d5cf6"></div></div><span class="tok-pct">15%</span></li>
+        <li class="tok-item"><div class="tok-dot" style="background:#10b981"></div><div style="flex:1"><div class="tok-nm">Liquidity & Exchanges</div><div class="tok-sub">1,200,000,000 NSCM</div></div><div class="tok-bar-w"><div class="tok-bar" style="width:12%;background:#10b981"></div></div><span class="tok-pct">12%</span></li>
+        <li class="tok-item"><div class="tok-dot" style="background:#f59e0b"></div><div style="flex:1"><div class="tok-nm">Team (2-yr vesting)</div><div class="tok-sub">800,000,000 NSCM</div></div><div class="tok-bar-w"><div class="tok-bar" style="width:8%;background:#f59e0b"></div></div><span class="tok-pct">8%</span></li>
+        <li class="tok-item"><div class="tok-dot" style="background:#ec4899"></div><div style="flex:1"><div class="tok-nm">Legal & Operations</div><div class="tok-sub">500,000,000 NSCM</div></div><div class="tok-bar-w"><div class="tok-bar" style="width:5%;background:#ec4899"></div></div><span class="tok-pct">5%</span></li>
+      </ul>
+    </div>
+    <div style="margin-top:28px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px 24px">
+      <p style="font-family:'Rajdhani',sans-serif;font-size:.92rem;color:var(--muted);line-height:1.8">⚙️ <strong style="color:var(--white)">Transaction Tax: 3%</strong> — 1% burned (deflationary), 1% to Victim Fund, 1% to Liquidity Pool. All wallets publicly verifiable on Etherscan. Team tokens locked 24 months via time-lock smart contract.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REPORT A SCAM -->
+<section class="report" id="report">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Take Action</span>
+    <h2 class="section-title">Report a Scam. Save Someone.</h2>
+    <p class="section-sub">Every report is reviewed by our DAO, added to the public scam database, and shared with law enforcement. Earn $NSCM bounties for verified reports.</p>
+    <div class="report-grid">
+      <div class="report-form">
+        <h3 style="font-family:'Orbitron',monospace;font-size:.78rem;font-weight:700;color:var(--white);margin-bottom:20px;letter-spacing:.06em">🚨 SUBMIT SCAM REPORT</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Your Name (optional)</label><input type="text" placeholder="Anonymous OK"/></div>
+          <div class="form-group"><label>Your Email</label><input type="email" placeholder="For case updates"/></div>
+        </div>
+        <div class="form-group"><label>Scam Type</label>
+          <select><option>Select scam category...</option><option>Crypto Rug Pull / Exit Scam</option><option>Romance / Pig-Butchering Scam</option><option>Phishing / Fake Website</option><option>Investment Fraud</option><option>NFT Scam</option><option>Fake Exchange / Wallet</option><option>Ponzi / Pyramid Scheme</option><option>Social Media Impersonation</option><option>Other Internet Fraud</option></select>
+        </div>
+        <div class="form-group"><label>Scammer Wallet / URL / Phone / Email</label><input type="text" placeholder="0x... or https:// or phone number"/></div>
+        <div class="form-group"><label>Describe What Happened</label><textarea placeholder="Provide as much detail as possible — dates, amounts, platforms used..."></textarea></div>
+        <div class="form-group"><label>Amount Lost (USD)</label><input type="number" placeholder="e.g. 500"/></div>
+        <button class="submit-btn">🛡️ SUBMIT — EARN $NSCM BOUNTY</button>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.75rem;color:var(--muted);margin-top:10px;text-align:center">All reports encrypted · Identity protected · DAO-verified before publication</p>
+      </div>
+      <div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.7rem;color:var(--white);margin-bottom:16px;letter-spacing:.08em">WHAT CAN YOU REPORT?</h3>
+        <div class="report-types">
+          <div class="rtype-card"><div class="rtype-icon">💎</div><h4>Rug Pulls</h4><p>Projects that take investor funds and disappear overnight.</p></div>
+          <div class="rtype-card"><div class="rtype-icon">❤️</div><h4>Romance Scams</h4><p>Pig-butchering and fake online relationship fraud.</p></div>
+          <div class="rtype-card"><div class="rtype-icon">🎣</div><h4>Phishing</h4><p>Fake websites, wallets, and credential-stealing attacks.</p></div>
+          <div class="rtype-card"><div class="rtype-icon">📈</div><h4>Fake Investment</h4><p>Ponzi schemes, fake trading bots, and yield scams.</p></div>
+          <div class="rtype-card"><div class="rtype-icon">🖼️</div><h4>NFT Fraud</h4><p>Counterfeit NFTs, wash trading, and fake marketplaces.</p></div>
+          <div class="rtype-card"><div class="rtype-icon">👤</div><h4>Impersonation</h4><p>Fake influencers, exchanges, and identity fraud.</p></div>
+        </div>
+        <div style="background:var(--card);border:1px solid rgba(16,185,129,.2);border-radius:10px;padding:18px;margin-top:16px">
+          <h4 style="font-family:'Orbitron',monospace;font-size:.66rem;color:var(--green);font-weight:700;margin-bottom:8px;letter-spacing:.08em">💰 BOUNTY PROGRAM</h4>
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.7">Earn up to <strong style="color:var(--white)">5,000 $NSCM</strong> for verified high-value scam reports. Top reporters receive monthly leaderboard rewards and DAO governance rights.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">The Team</span>
+    <h2 class="section-title">Built by Fighters, Not Fakers</h2>
+    <p class="section-sub">Cybercrime investigators, blockchain engineers, legal experts, and DeFi veterans united by one mission: ending financial fraud.</p>
+    <div class="team-grid">
+      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--pur),var(--blue2))">MK</div><h4>Marcus Kalu</h4><div class="role">Founder & CEO</div><p>Ex-Interpol cybercrime analyst. 14 years fighting financial fraud across Africa & Europe.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
+      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--cyan),var(--blue2))">SA</div><h4>Sofia Andersson</h4><div class="role">CTO & Lead Engineer</div><p>Smart contract architect. Previously led blockchain security at a top-10 DeFi protocol.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
+      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--pur2),var(--cyan))">JO</div><h4>James Osei</h4><div class="role">Head of Investigations</div><p>Former FBI Cyber Division. Specialises in crypto tracing and on-chain forensics.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
+      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--green),var(--cyan))">PN</div><h4>Priya Nair</h4><div class="role">Chief Legal Officer</div><p>Cybercrime lawyer with cases across India, UK, and USA. Drives law enforcement partnerships.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
+      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--pur),var(--pink))">KM</div><h4>Kofi Mensah</h4><div class="role">Head of Community</div><p>Web3 community builder. Grew multiple DeFi communities to 100K+ members across Africa.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
+      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--yellow),#f97316)">RL</div><h4>Rachel Liu</h4><div class="role">DeFi & Tokenomics Lead</div><p>DeFi economist. Designed token models for 3 top-100 CoinMarketCap projects since 2020.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section style="padding:84px 24px" id="roadmap">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start">
+      <div>
+        <div class="divider"></div>
+        <span class="tag">The Journey</span>
+        <h2 class="section-title">Roadmap to a Scam-Free Web3</h2>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:1rem;color:var(--muted);line-height:1.8;margin-bottom:28px">From presale to global anti-fraud infrastructure — a clear, verifiable path backed by on-chain milestones and community governance votes.</p>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:8px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted)">🟢 <strong style="color:var(--green)">Completed</strong></p>
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted)">🟣 <strong style="color:var(--pur3)">Active Now</strong></p>
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted)">⚪ <strong style="color:var(--muted)">Upcoming</strong></p>
+        </div>
+      </div>
+      <div class="roadmap-track">
+        <div class="rm-item done"><div class="rm-dot"></div><div class="rm-quarter">Q1 2025 — Completed</div><div class="rm-card"><h4>Foundation</h4><ul><li>Smart contract development & audit</li><li>Team assembly & KYC</li><li>Whitepaper v1 published</li><li>Community launch (50K members)</li></ul></div></div>
+        <div class="rm-item done"><div class="rm-dot"></div><div class="rm-quarter">Q2 2025 — Completed</div><div class="rm-card"><h4>Presale Launch</h4><ul><li>Stage 1–2 presale ($800K raised)</li><li>Scam reporting MVP launched</li><li>Law enforcement partnerships (3 countries)</li><li>CertiK audit completed</li></ul></div></div>
+        <div class="rm-item active"><div class="rm-dot"></div><div class="rm-quarter">Q3 2025 — Active Now</div><div class="rm-card"><h4>Stage 3–5 & Tools</h4><ul><li>Scam database v2 (public API)</li><li>Browser extension (anti-phishing)</li><li>Stage 3 presale LIVE NOW</li><li>CEX listings confirmed</li></ul></div></div>
+        <div class="rm-item upcoming"><div class="rm-dot"></div><div class="rm-quarter">Q4 2025 — Upcoming</div><div class="rm-card"><h4>TGE & Exchange Listings</h4><ul><li>Token Generation Event (TGE)</li><li>DEX & CEX listings (Uniswap, Gate.io)</li><li>Victim Compensation Fund activated</li><li>DAO governance goes live</li></ul></div></div>
+        <div class="rm-item upcoming"><div class="rm-dot"></div><div class="rm-quarter">Q1–Q2 2026 — Planned</div><div class="rm-card"><h4>Ecosystem Expansion</h4><ul><li>Mobile app (iOS & Android)</li><li>AI fraud detection engine v1</li><li>Cross-chain bridges (BNB, Polygon)</li><li>Expand to 15 country partnerships</li></ul></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIALS -->
+<section class="socials" id="socials">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Join the Movement</span>
+    <h2 class="section-title">Find Us Everywhere</h2>
+    <p class="section-sub">94,000+ fighters strong and growing. Join the community that's actually doing something about online fraud.</p>
+    <div class="social-grid">
+      <a href="#" class="social-card tw"><span class="social-icon">𝕏</span><div class="social-name">Twitter / X</div><div class="social-count">47.2K Followers</div></a>
+      <a href="#" class="social-card tg"><span class="social-icon">✈️</span><div class="social-name">Telegram</div><div class="social-count">28.9K Members</div></a>
+      <a href="#" class="social-card dc"><span class="social-icon">💬</span><div class="social-name">Discord</div><div class="social-count">12.1K Members</div></a>
+      <a href="#" class="social-card yt"><span class="social-icon">▶️</span><div class="social-name">YouTube</div><div class="social-count">3.8K Subscribers</div></a>
+      <a href="#" class="social-card rd"><span class="social-icon">🔴</span><div class="social-name">Reddit</div><div class="social-count">r/NoScamCoin · 5.2K</div></a>
+      <a href="#" class="social-card gh"><span class="social-icon">🐙</span><div class="social-name">GitHub</div><div class="social-count">Open Source · 340★</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:84px 24px" id="faq">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Got Questions?</span>
+    <h2 class="section-title" style="text-align:center">Frequently Asked Questions</h2>
+    <p class="section-sub" style="text-align:center;margin:0 auto 40px">Everything you need to know about $NSCM, the presale, and our anti-fraud mission.</p>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What is NOSCAM ($NSCM)? <span class="faq-arrow">▾</span></button><div class="faq-a"><p>$NSCM is an ERC-20 utility token built on Ethereum that powers the NOSCAM anti-fraud ecosystem. It funds scam investigations, rewards whistleblowers, compensates victims, and grants DAO governance rights to help clean up the internet.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I buy $NSCM tokens? <span class="faq-arrow">▾</span></button><div class="faq-a"><p>Connect MetaMask or Trust Wallet to our presale page. Buy with ETH, USDT, BNB, USDC, or card. Tokens unlock 40% at TGE, with the remaining 60% vesting over 3 months. Always use the official presale link — beware of imposters!</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How does the Victim Compensation Fund work? <span class="faq-arrow">▾</span></button><div class="faq-a"><p>1% of every $NSCM transaction flows automatically to the Victim Compensation Treasury smart contract. Verified scam victims apply via our DAO portal. Token holders vote on claims above $5,000. Sub-$5,000 claims are processed within 14 days after verification.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is $NSCM audited and safe? <span class="faq-arrow">▾</span></button><div class="faq-a"><p>Yes. Smart contracts audited by CertiK (zero critical issues) and our team is fully KYC-verified. All allocation wallet addresses are published on-chain and publicly verifiable. We publish full transparency reports monthly.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I earn $NSCM by reporting scams? <span class="faq-arrow">▾</span></button><div class="faq-a"><p>Submit a scam report via our tool. Once the DAO verifies your report, you receive a $NSCM bounty — from 50 $NSCM for basic reports to 5,000 $NSCM for high-value reports that result in recovered funds or law enforcement action.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">When will $NSCM list on exchanges? <span class="faq-arrow">▾</span></button><div class="faq-a"><p>TGE is planned for Q4 2025. DEX listings on Uniswap and PancakeSwap go live at TGE. CEX listings confirmed for Gate.io, MEXC, and two additional exchanges to be announced.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What makes NOSCAM different from other crypto projects? <span class="faq-arrow">▾</span></button><div class="faq-a"><p>$NSCM has real-world utility beyond financial returns. Every scam report, victim compensation, and fraud alert relies on the token. We have active law enforcement partnerships, a working scam database, and a team with genuine anti-fraud credentials.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <h2>Ready to Fight Back?</h2>
+  <p>Join 94,000 people who chose to invest in truth. Buy $NSCM in Stage 3 before the price increases.</p>
+  <a href="#buy" class="cta-btn-glow">🛡️ Buy $NSCM — Stage 3 Live</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo"><div class="logo-icon">⛨</div><span class="logo-text">NO<em>SCAM</em></span></a>
+        <p>The world's first anti-fraud cryptocurrency. Powered by truth, governed by community, built to protect.</p>
+        <div class="footer-social-row"><a href="#" class="fsoc">𝕏</a><a href="#" class="fsoc">✈️</a><a href="#" class="fsoc">💬</a><a href="#" class="fsoc">▶️</a><a href="#" class="fsoc">🐙</a></div>
+      </div>
+      <div class="footer-col"><h5>About</h5><a href="#about">Our Mission</a><a href="#whitepaper">Whitepaper</a><a href="#tokenomics">Tokenomics</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a><a href="#">Press Kit</a></div>
+      <div class="footer-col"><h5>Fight Scams</h5><a href="#report">Report a Scam</a><a href="#">Scam Database</a><a href="#">Fraud Alerts</a><a href="#">Verify a Project</a><a href="#">Education Hub</a><a href="#">Browser Extension</a></div>
+      <div class="footer-col"><h5>Buy & Earn</h5><a href="#buy">Buy $NSCM</a><a href="#">How to Buy</a><a href="#">Referral Program</a><a href="#">Bounty Program</a><a href="#">Staking (Soon)</a><a href="#faq">FAQs</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 NOSCAM Foundation. $NSCM Token. All rights reserved. <a href="#">Privacy Policy</a> · <a href="#">Terms</a></p>
+      <p>Contract: <span style="font-family:'Orbitron',monospace;font-size:.62rem;color:var(--muted)">0xNSCM...Published at TGE</span></p>
+    </div>
+  </div>
+  <p class="disclaimer">⚠️ This is not financial advice. Cryptocurrency investments carry significant risk. $NSCM tokens are utility tokens for the NOSCAM anti-fraud ecosystem. Never invest more than you can afford to lose. Always DYOR.</p>
+</footer>
+
+<script src="nsc.js"></script>
+</body>
+</html>
