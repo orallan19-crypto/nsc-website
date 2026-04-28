@@ -42,9 +42,9 @@ body>*:not(#bg-canvas){position:relative;z-index:1}
 .nav-links>li>a:hover::after,.nav-links>li:hover>a::after{transform:scaleX(1)}
 .caret{font-size:.5rem;transition:transform .2s}
 .nav-links>li:hover .caret{transform:rotate(180deg)}
-.dropdown{position:absolute;top:calc(100% - 1px);left:0;min-width:220px;background:rgba(7,6,18,.97);border:1px solid var(--border);border-top:2px solid var(--pur);border-radius:0 0 10px 10px;list-style:none;opacity:0;visibility:hidden;pointer-events:none;transform:none;transition:opacity .22s;z-index:200;backdrop-filter:blur(20px)}
-.nav-links>li:hover .dropdown,.nav-links>li:focus-within .dropdown,.dropdown:hover{opacity:1;visibility:visible;pointer-events:all}
-.dropdown li a{display:block;padding:10px 18px;font-family:'Rajdhani',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.06em;color:var(--muted);text-decoration:none;border-left:2px solid transparent;transition:all .15s;text-transform:uppercase}
+.dropdown{position:absolute;top:calc(100% - 1px);left:0;min-width:220px;background:rgba(7,6,18,.97);border:1px solid var(--border);border-top:2px solid var(--pur);border-radius:0 0 10px 10px;list-style:none;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(6px);transition:opacity .22s ease,transform .22s ease,visibility .22s ease;z-index:200;backdrop-filter:blur(20px)}
+.nav-links>li:hover .dropdown,.nav-links>li:focus-within .dropdown,.dropdown:hover{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+.dropdown li a{display:block;padding:10px 18px;font-family:'Rajdhani',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.06em;color:var(--muted);text-decoration:none;border-left:2px solid transparent;transition:all .2s;text-transform:uppercase}
 .dropdown li a:hover{color:var(--cyan2);background:rgba(124,58,237,.08);border-left-color:var(--cyan);padding-left:24px}
 .dd-tag{background:linear-gradient(90deg,var(--pur),var(--cyan));color:#fff;font-size:.55rem;padding:1px 6px;border-radius:3px;margin-left:5px;font-family:'Orbitron',monospace}
 .nav-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
