@@ -42,7 +42,7 @@
     <ul class="nav-links">
       <li><a href="#">About <span class="caret">▾</span></a>
         <ul class="dropdown">
-          <li><a href="#about">Our Mission</a></li>
+          <li><a href="#whitepaper">Our Mission</a></li>
           <li><a href="#whitepaper">Whitepaper</a></li>
           <li><a href="#tokenomics">Tokenomics</a></li>
           <li><a href="#team">Team</a></li>
@@ -53,18 +53,18 @@
       <li><a href="#">Fight Scams <span class="caret">▾</span></a>
         <ul class="dropdown">
           <li><a href="#report">Report a Scam <span class="dd-tag">NEW</span></a></li>
-          <li><a href="#">Scam Database</a></li>
-          <li><a href="#">Fraud Alerts</a></li>
-          <li><a href="#">Education Hub</a></li>
-          <li><a href="#">Verify a Project</a></li>
+          <li><a href="#report">Scam Database</a></li>
+          <li><a href="#report">Fraud Alerts</a></li>
+          <li><a href="#report">Education Hub</a></li>
+          <li><a href="#report">Verify a Project</a></li>
         </ul>
       </li>
       <li><a href="#">Community <span class="caret">▾</span></a>
         <ul class="dropdown">
           <li><a href="#socials">Socials</a></li>
-          <li><a href="#">Ambassadors</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Press Kit</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#team">Ambassadors</a></li>
+          <li><a href="#press-kit">Press Kit</a></li>
           <li><a href="#faq">FAQs</a></li>
         </ul>
       </li>
@@ -81,10 +81,10 @@
 <!-- MOBILE MENU -->
 <nav class="mobile-menu" id="mobileMenu">
   <ul>
-    <li class="has-sub"><a href="#" onclick="msub(event,this)">About <span>▾</span></a><div class="m-sub"><a href="#about">Mission</a><a href="#whitepaper">Whitepaper</a><a href="#tokenomics">Tokenomics</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a></div></li>
+    <li class="has-sub"><a href="#" onclick="msub(event,this)">About <span>▾</span></a><div class="m-sub"><a href="#whitepaper">Mission</a><a href="#whitepaper">Whitepaper</a><a href="#tokenomics">Tokenomics</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a></div></li>
     <li><a href="#buy">Buy N$C</a></li>
-    <li class="has-sub"><a href="#" onclick="msub(event,this)">Fight Scams <span>▾</span></a><div class="m-sub"><a href="#report">Report a Scam</a><a href="#">Scam Database</a><a href="#">Fraud Alerts</a><a href="#">Education Hub</a></div></li>
-    <li class="has-sub"><a href="#" onclick="msub(event,this)">Community <span>▾</span></a><div class="m-sub"><a href="#socials">Socials</a><a href="#">Blog</a><a href="#faq">FAQs</a></div></li>
+    <li class="has-sub"><a href="#" onclick="msub(event,this)">Fight Scams <span>▾</span></a><div class="m-sub"><a href="#report">Report a Scam</a><a href="#report">Scam Database</a><a href="#report">Fraud Alerts</a><a href="#report">Education Hub</a></div></li>
+    <li class="has-sub"><a href="#" onclick="msub(event,this)">Community <span>▾</span></a><div class="m-sub"><a href="#socials">Socials</a><a href="#news">News</a><a href="#team">Ambassadors</a><a href="#faq">FAQs</a></div></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ul>
   <a href="#buy" class="mob-cta" onclick="closeMob()">🚀 Buy N$C Now</a>
@@ -94,7 +94,7 @@
 <section class="hero" id="home">
   <div class="hero-nebula"></div>
   <div class="hero-grid"></div>
-  <div class="hero-particles" id="particles"></div>
+  <div class="hero-particles" cid="particles"></div>
   <div class="hero-orb">
     <div class="orb-ring"></div><div class="orb-ring"></div><div class="orb-ring"></div><div class="orb-ring"></div>
     <div class="orb-core">⛨</div>
@@ -299,14 +299,50 @@
     <div class="divider"></div>
     <span class="tag">The Team</span>
     <h2 class="section-title">Built by Fighters, Not Fakers</h2>
-    <p class="section-sub">Cybercrime investigators, blockchain engineers, legal experts, and DeFi veterans united by one mission: ending financial fraud.</p>
+    <p class="section-sub">Our core team combines cybercrime investigations, blockchain engineering, legal compliance, and community operations to protect investors and make on-chain finance safer.</p>
     <div class="team-grid">
-      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--pur),var(--blue2))">DPH</div><h4>Dymck Petit Homme</h4><div class="role">Founder & CEO</div><p>Expert cybercrime analyst. 14 years fighting financial fraud across Africa & Europe.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
-      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--cyan),var(--blue2))">M</div><h4>Mahesh</h4><div class="role">CTO & Lead Engineer</div><p>Smart contract architect. Previously led blockchain security at a top-10 DeFi protocol.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
-      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--pur2),var(--cyan))">F</div><h4>Frandy</h4><div class="role">Head of Investigations and operations</div><p>Specialises in crypto tracing and on-chain forensics.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
-      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--green),var(--cyan))">OA</div><h4>Orabaasa Allan</h4><div class="role">Head developer and web3 engineer</div><p>Has been involved in developing anti-scam systems for over 10 years.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
-      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--pur),var(--pink))">HS</div><h4>Habarugaba Simon</h4><div class="role">Head of Community</div><p>Web3 community builder. Grew multiple DeFi communities to 100K+ members across Africa.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
-      <div class="team-card fade-up"><div class="team-avatar" style="background:linear-gradient(135deg,var(--yellow),#f97316)">A</div><h4>Abdullah</h4><div class="role">DeFi & Tokenomics Lead</div><p>DeFi economist. Designed token models for 3 top-100 CoinMarketCap projects since 2020.</p><div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div></div>
+      <div class="team-card fade-up">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--pur),var(--blue2))">DPH</div>
+        <h4>Dymck Petit Homme</h4>
+        <div class="role">Founder & CEO</div>
+        <p>Cybercrime analyst with 14 years of experience fighting financial fraud across Africa and Europe.</p>
+        <div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--cyan),var(--blue2))">M</div>
+        <h4>Mahesh</h4>
+        <div class="role">CTO & Lead Engineer</div>
+        <p>Smart contract architect and security lead with experience at top-tier DeFi protocols.</p>
+        <div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--pur2),var(--cyan))">F</div>
+        <h4>Frandy</h4>
+        <div class="role">Head of Investigations</div>
+        <p>Leads on-chain forensics, scam tracing, and incident response for high-risk cases.</p>
+        <div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--green),var(--cyan))">OA</div>
+        <h4>Orabaasa Allan</h4>
+        <div class="role">Web3 Engineer</div>
+        <p>Developer of anti-scam systems with over a decade of experience in blockchain security.</p>
+        <div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--pur),var(--pink))">HS</div>
+        <h4>Habarugaba Simon</h4>
+        <div class="role">Head of Community</div>
+        <p>Builds trusted Web3 communities and supports user safety through education and outreach.</p>
+        <div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div>
+      </div>
+      <div class="team-card fade-up">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--yellow),#f97316)">A</div>
+        <h4>Abdullah</h4>
+        <div class="role">DeFi & Tokenomics Lead</div>
+        <p>Designs tokenomics and economic models that align incentives with long-term security.</p>
+        <div class="team-links"><a href="#" class="team-link">𝕏</a><a href="#" class="team-link">in</a></div>
+      </div>
     </div>
   </div>
 </section>
@@ -345,12 +381,10 @@
     <h2 class="section-title">Find Us Everywhere</h2>
     <p class="section-sub">94,000+ fighters strong and growing. Join the community that's actually doing something about online fraud.</p>
     <div class="social-grid">
-      <a href="#" class="social-card tw"><span class="social-icon">𝕏</span><div class="social-name">Twitter / X</div><div class="social-count">47.2K Followers</div></a>
-      <a href="#" class="social-card tg"><span class="social-icon">✈️</span><div class="social-name">Telegram</div><div class="social-count">28.9K Members</div></a>
-      <a href="#" class="social-card dc"><span class="social-icon">💬</span><div class="social-name">Discord</div><div class="social-count">12.1K Members</div></a>
-      <a href="#" class="social-card yt"><span class="social-icon">▶️</span><div class="social-name">YouTube</div><div class="social-count">3.8K Subscribers</div></a>
-      <a href="#" class="social-card rd"><span class="social-icon">🔴</span><div class="social-name">Reddit</div><div class="social-count">r/NoScamCoin · 5.2K</div></a>
-      <a href="#" class="social-card gh"><span class="social-icon">🐙</span><div class="social-name">GitHub</div><div class="social-count">Open Source · 340★</div></a>
+      <a href="https://instagram.com/yourusername" class="social-card ig"><img src="ig_logo.jpeg" alt="Instagram" class="social-icon"><div class="social-name">Instagram</div><div class="social-count">Follow Us</div></a>
+      <a href="https://t.me/yourchannel" class="social-card tg"><img src="telegram_logo.webp" alt="Telegram" class="social-icon"><div class="social-name">Telegram</div><div class="social-count">28.9K Members</div></a>
+      <a href="https://x.com/yourusername" class="social-card tw"><img src="x_logo.png" alt="X" class="social-icon"><div class="social-name">X (Twitter)</div><div class="social-count">47.2K Followers</div></a>
+      <a href="https://linkedin.com/company/yourcompany" class="social-card li"><img src="linkedin_logo.jpeg" alt="LinkedIn" class="social-icon"><div class="social-name">LinkedIn</div><div class="social-count">Connect</div></a>
     </div>
   </div>
 </section>
@@ -381,6 +415,256 @@
   <a href="#buy" class="cta-btn-glow">🛡️ Buy N$C — Stage 3 Live</a>
 </div>
 
+<!-- NEWS -->
+<section class="news" id="news">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Latest Updates</span>
+    <h2 class="section-title">News & Blog</h2>
+    <p class="section-sub">Stay informed with the latest developments, fraud alerts, and community stories from the NOSCAMCOIN ecosystem.</p>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-date">April 28, 2026</div>
+        <h3>Major Fraud Ring Dismantled</h3>
+        <p>Thanks to community reports, a $2.3M crypto scam operation has been shut down. N$C tokens distributed to victims.</p>
+        <a href="#" class="news-link">Read Full Story ↗</a>
+      </div>
+      <div class="news-card">
+        <div class="news-date">April 25, 2026</div>
+        <h3>New Anti-Scam AI Features</h3>
+        <p>Our AI now detects 98% of phishing attempts before they reach users. Whitepaper updated with technical details.</p>
+        <a href="#" class="news-link">Learn More ↗</a>
+      </div>
+      <div class="news-card">
+        <div class="news-date">April 20, 2026</div>
+        <h3>Community Milestone: 100K Members</h3>
+        <p>We've reached 100,000 active members! Special airdrop event announced for loyal community contributors.</p>
+        <a href="#" class="news-link">View Announcement ↗</a>
+      </div>
+      <div class="news-card">
+        <div class="news-date">April 15, 2026</div>
+        <h3>Partnership with Leading Security Firm</h3>
+        <p>Exciting news: NOSCAMCOIN partners with CertiK for ongoing smart contract audits and security monitoring.</p>
+        <a href="#" class="news-link">Read Press Release ↗</a>
+      </div>
+      <div class="news-card">
+        <div class="news-date">April 10, 2026</div>
+        <h3>Tokenomics Update</h3>
+        <p>Staking rewards increased by 15% following community governance vote. New staking pools now available.</p>
+        <a href="#" class="news-link">Details Here ↗</a>
+      </div>
+      <div class="news-card">
+        <div class="news-date">April 5, 2026</div>
+        <h3>Victim Compensation Fund Success</h3>
+        <p>Over $500K distributed to scam victims through our decentralized compensation system. Transparency report available.</p>
+        <a href="#" class="news-link">View Report ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO BUY -->
+<section style="padding:84px 24px;background:var(--dark2)" id="how-to-buy">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Getting Started</span>
+    <h2 class="section-title">How to Buy N$C</h2>
+    <p class="section-sub">Purchase NOSCAMCOIN tokens in 5 easy steps. Currently in Stage 3 of 8 — price increases with each stage.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:32px">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center">
+        <div style="font-size:2.4rem;margin-bottom:16px">1️⃣</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Connect Wallet</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6">Use MetaMask, Phantom, or any Web3 wallet. Ensure you have ETH, BNB, or MATIC for gas fees.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center">
+        <div style="font-size:2.4rem;margin-bottom:16px">2️⃣</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Visit Presale</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6">Head to presale.noscamcoin.com and connect your wallet to the platform.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center">
+        <div style="font-size:2.4rem;margin-bottom:16px">3️⃣</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Choose Amount</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6">Enter the USD amount you want to invest. Minimum: $10 | Maximum: $50,000 per wallet.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center">
+        <div style="font-size:2.4rem;margin-bottom:16px">4️⃣</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Complete KYC</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6">Verify your identity (60 seconds). Required to prevent fraud and comply with regulations.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center">
+        <div style="font-size:2.4rem;margin-bottom:16px">5️⃣</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Confirm & Receive</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6">Approve the transaction and N$C tokens will be sent to your wallet instantly.</p>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center">
+        <div style="font-size:2.4rem;margin-bottom:16px">📋</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Claim at Launch</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6">After presale ends, full tokens unlock at exchange listing. 1-hour claiming window per investor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERRAL PROGRAM -->
+<section style="padding:84px 24px" id="referral-program">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Earn Rewards</span>
+    <h2 class="section-title">Referral Program</h2>
+    <p class="section-sub">Earn up to 10% in commission for every friend who buys N$C through your referral link.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:center">
+      <div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px;margin-bottom:20px">
+          <h4 style="font-family:'Orbitron',monospace;font-size:.75rem;color:var(--white);margin-bottom:12px;letter-spacing:.06em">🎯 COMMISSION TIERS</h4>
+          <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)">
+            <span style="font-family:'Rajdhani',sans-serif;color:var(--muted)">0-10 Referrals</span>
+            <span style="font-family:'Rajdhani',sans-serif;color:var(--pur3);font-weight:700">5%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)">
+            <span style="font-family:'Rajdhani',sans-serif;color:var(--muted)">11-50 Referrals</span>
+            <span style="font-family:'Rajdhani',sans-serif;color:var(--pur3);font-weight:700">7.5%</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:12px 0">
+            <span style="font-family:'Rajdhani',sans-serif;color:var(--muted)">50+ Referrals</span>
+            <span style="font-family:'Rajdhani',sans-serif;color:var(--pur3);font-weight:700">10%</span>
+          </div>
+        </div>
+        <div style="background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-radius:14px;padding:20px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.7"><strong style="color:var(--green)">Example:</strong> Refer 5 friends who each buy $1,000. You earn 5 × $1,000 × 5% = $250 in N$C tokens instantly.</p>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.85rem;color:var(--white);margin-bottom:16px;letter-spacing:.04em">HOW IT WORKS</h3>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin-bottom:16px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted);line-height:1.8"><strong style="color:var(--white)">Step 1:</strong> Share your unique referral code with friends.</p>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin-bottom:16px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted);line-height:1.8"><strong style="color:var(--white)">Step 2:</strong> They buy N$C using your code.</p>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted);line-height:1.8"><strong style="color:var(--white)">Step 3:</strong> Commission is paid instantly to your wallet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAKING -->
+<section style="padding:84px 24px;background:var(--dark2)" id="staking">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Passive Income</span>
+    <h2 class="section-title">Staking Rewards (Coming Soon)</h2>
+    <p class="section-sub">Lock your N$C tokens and earn recurring rewards. Staking launches at exchange listing.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:32px">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px">
+        <h4 style="font-family:'Orbitron',monospace;font-size:.75rem;color:var(--pur3);margin-bottom:12px;letter-spacing:.06em">⏱️ 30-DAY LOCK</h4>
+        <div style="font-size:2rem;font-family:'Orbitron',monospace;color:var(--white);font-weight:700;margin:16px 0">12% APY</div>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:16px">Short-term staking with flexible exit. Rewards paid weekly.</p>
+        <button style="width:100%;padding:10px;background:var(--pur);border:none;border-radius:8px;color:#fff;font-weight:700;cursor:pointer;transition:all .2s">Stake Now</button>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;border-color:var(--pur)">
+        <h4 style="font-family:'Orbitron',monospace;font-size:.75rem;color:var(--cyan);margin-bottom:12px;letter-spacing:.06em">⭐ 90-DAY LOCK (POPULAR)</h4>
+        <div style="font-size:2rem;font-family:'Orbitron',monospace;color:var(--white);font-weight:700;margin:16px 0">18% APY</div>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:16px">Recommended lock period. Best risk-reward balance.</p>
+        <button style="width:100%;padding:10px;background:linear-gradient(135deg,var(--pur),var(--cyan));border:none;border-radius:8px;color:#fff;font-weight:700;cursor:pointer;transition:all .2s">Stake Now</button>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px">
+        <h4 style="font-family:'Orbitron',monospace;font-size:.75rem;color:var(--pur3);margin-bottom:12px;letter-spacing:.06em">🔒 365-DAY LOCK</h4>
+        <div style="font-size:2rem;font-family:'Orbitron',monospace;color:var(--white);font-weight:700;margin:16px 0">28% APY</div>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.6;margin-bottom:16px">Maximum rewards for long-term believers. Annual payout.</p>
+        <button style="width:100%;padding:10px;background:var(--pur);border:none;border-radius:8px;color:#fff;font-weight:700;cursor:pointer;transition:all .2s">Stake Now</button>
+      </div>
+    </div>
+    <div style="background:rgba(124,58,237,.08);border:1px solid rgba(124,58,237,.2);border-radius:14px;padding:24px;margin-top:32px">
+      <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.7"><strong style="color:var(--white)">📌 Note:</strong> Staking rewards are funded from 15% of transaction fees and DAO treasury. Early stakers receive bonus multipliers (2x rewards for first 30 days post-launch).</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRESS KIT -->
+<section style="padding:84px 24px" id="press-kit">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Media Resources</span>
+    <h2 class="section-title">Press Kit</h2>
+    <p class="section-sub">Journalists, influencers, and media partners — access official NOSCAMCOIN materials, logos, and brand guidelines.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:32px">
+      <a href="#" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-decoration:none;transition:all .2s">
+        <div style="font-size:2rem;margin-bottom:12px">📄</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Brand Guidelines</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted)">Logo usage, color palette, typography rules, and dos/don'ts.</p>
+      </a>
+      <a href="#" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-decoration:none;transition:all .2s">
+        <div style="font-size:2rem;margin-bottom:12px">🎨</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Logo Pack</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted)">High-res logos in PNG, SVG, and dark mode variants.</p>
+      </a>
+      <a href="#" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-decoration:none;transition:all .2s">
+        <div style="font-size:2rem;margin-bottom:12px">📸</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Team Photos</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted)">Professional headshots and team imagery (royalty-free).</p>
+      </a>
+      <a href="#" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-decoration:none;transition:all .2s">
+        <div style="font-size:2rem;margin-bottom:12px">📰</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Press Releases</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted)">Official announcements, milestones, and partnership news.</p>
+      </a>
+      <a href="#" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-decoration:none;transition:all .2s">
+        <div style="font-size:2rem;margin-bottom:12px">🎥</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Video Assets</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted)">4K product demos, explainer videos, and B-roll footage.</p>
+      </a>
+      <a href="#" style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-decoration:none;transition:all .2s">
+        <div style="font-size:2rem;margin-bottom:12px">📊</div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.9rem;color:var(--white);margin-bottom:8px">Company Fact Sheet</h3>
+        <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted)">Mission, stats, achievements, and key talking points (PDF).</p>
+      </a>
+    </div>
+    <div style="background:rgba(157,92,246,.08);border:1px solid rgba(157,92,246,.2);border-radius:14px;padding:24px;margin-top:32px">
+      <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);line-height:1.7">Need something specific? <strong style="color:var(--white)">Contact our press team:</strong> <span style="color:var(--pur3)">press@noscamcoin.com</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- BROWSER EXTENSION -->
+<section style="padding:84px 24px;background:var(--dark2)" id="browser-extension">
+  <div class="section-inner">
+    <div class="divider"></div>
+    <span class="tag">Protect Yourself</span>
+    <h2 class="section-title">Browser Extension</h2>
+    <p class="section-sub">Real-time scam detection directly in your browser. One-click verification for wallets, websites, and addresses.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:center">
+      <div>
+        <h3 style="font-family:'Orbitron',monospace;font-size:.85rem;color:var(--white);margin-bottom:20px;letter-spacing:.04em">KEY FEATURES</h3>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin-bottom:16px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted);line-height:1.8">✅ <strong style="color:var(--white)">Real-time Phishing Detection</strong> — Blocks malicious websites before you click.</p>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin-bottom:16px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted);line-height:1.8">✅ <strong style="color:var(--white)">Address Verification</strong> — Verify wallet & exchange addresses instantly.</p>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;margin-bottom:16px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted);line-height:1.8">✅ <strong style="color:var(--white)">Scam Database Access</strong> — Check tokens against our 50K+ known scams.</p>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px">
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.9rem;color:var(--muted);line-height:1.8">✅ <strong style="color:var(--white)">Smart Alerts</strong> — Get notified about suspicious activity on your accounts.</p>
+        </div>
+      </div>
+      <div>
+        <div style="background:linear-gradient(135deg,var(--card),rgba(124,58,237,.1));border:1px solid var(--border);border-radius:14px;padding:32px;text-align:center">
+          <div style="font-size:3.5rem;margin-bottom:20px">🔒</div>
+          <h3 style="font-family:'Orbitron',monospace;font-size:.85rem;color:var(--white);margin-bottom:16px">DOWNLOAD EXTENSION</h3>
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.88rem;color:var(--muted);margin-bottom:20px">Available for Chrome, Firefox, Edge, and Brave.</p>
+          <a href="#" style="display:inline-block;padding:12px 28px;background:linear-gradient(135deg,var(--pur),var(--cyan));border:none;border-radius:10px;color:#fff;font-family:'Orbitron',monospace;font-weight:700;font-size:.75rem;text-decoration:none;margin-bottom:12px;cursor:pointer">CHROME</a>
+          <a href="#" style="display:inline-block;padding:12px 28px;background:linear-gradient(135deg,var(--pur),var(--cyan));border:none;border-radius:10px;color:#fff;font-family:'Orbitron',monospace;font-weight:700;font-size:.75rem;text-decoration:none;margin:0 8px 12px;cursor:pointer">FIREFOX</a>
+          <a href="#" style="display:inline-block;padding:12px 28px;background:linear-gradient(135deg,var(--pur),var(--cyan));border:none;border-radius:10px;color:#fff;font-family:'Orbitron',monospace;font-weight:700;font-size:.75rem;text-decoration:none;cursor:pointer">EDGE</a>
+          <p style="font-family:'Rajdhani',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-top:16px">v2.1.3 — Last updated April 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
@@ -390,9 +674,9 @@
         <p>The world's first anti-fraud cryptocurrency. Powered by truth, governed by community, built to protect.</p>
         <div class="footer-social-row"><a href="#" class="fsoc">𝕏</a><a href="#" class="fsoc">✈️</a><a href="#" class="fsoc">💬</a><a href="#" class="fsoc">▶️</a><a href="#" class="fsoc">🐙</a></div>
       </div>
-      <div class="footer-col"><h5>About</h5><a href="#about">Our Mission</a><a href="#whitepaper">Whitepaper</a><a href="#tokenomics">Tokenomics</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a><a href="#">Press Kit</a></div>
-      <div class="footer-col"><h5>Fight Scams</h5><a href="#report">Report a Scam</a><a href="#">Scam Database</a><a href="#">Fraud Alerts</a><a href="#">Verify a Project</a><a href="#">Education Hub</a><a href="#">Browser Extension</a></div>
-      <div class="footer-col"><h5>Buy & Earn</h5><a href="#buy">Buy N$C</a><a href="#">How to Buy</a><a href="#">Referral Program</a><a href="#">Bounty Program</a><a href="#">Staking (Soon)</a><a href="#faq">FAQs</a></div>
+      <div class="footer-col"><h5>About</h5><a href="#whitepaper">Our Mission</a><a href="#whitepaper">Whitepaper</a><a href="#tokenomics">Tokenomics</a><a href="#team">Team</a><a href="#roadmap">Roadmap</a><a href="#press-kit">Press Kit</a></div>
+      <div class="footer-col"><h5>Fight Scams</h5><a href="#report">Report a Scam</a><a href="#report">Scam Database</a><a href="#report">Fraud Alerts</a><a href="#report">Verify a Project</a><a href="#report">Education Hub</a><a href="#browser-extension">Browser Extension</a></div>
+      <div class="footer-col"><h5>Buy & Earn</h5><a href="#buy">Buy N$C</a><a href="#how-to-buy">How to Buy</a><a href="#referral-program">Referral Program</a><a href="#report">Bounty Program</a><a href="#staking">Staking</a><a href="#faq">FAQs</a></div>
     </div>
     <div class="footer-bottom">
       <p>© 2025 NOSCAMCOIN Foundation.  Token. All rights reserved. <a href="#">Privacy Policy</a> · <a href="#">Terms</a></p>
