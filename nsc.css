@@ -381,7 +381,7 @@ body > *:not(#bg-canvas) {
   cursor: pointer;
   background: none;
   border: none;
-  padding: 6px;
+  padding: 2px;
 }
 .hamburger span {
   display: block;
@@ -1119,6 +1119,13 @@ section {
 .brain-svg {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.brain-svg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.6);
 }
 .anode-grid {
   display: grid;
