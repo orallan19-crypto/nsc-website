@@ -125,6 +125,27 @@ function installNavListeners() {
   });
 }
 installNavListeners();
+
+// MOBILE MENU
+const hb = document.getElementById("hamburger");
+const mm = document.getElementById("mobileMenu");
+
+if (hb && mm) {
+  hb.addEventListener("click", () => {
+    const o = mm.classList.toggle("open");
+    hb.classList.toggle("open", o);
+    document.body.style.overflow = o ? "hidden" : "";
+  });
+
+  mm.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mm.classList.remove("open");
+      hb.classList.remove("open");
+      document.body.style.overflow = "";
+    });
+  });
+}
+
 // FAQ
 function toggleFaq(btn) {
   const item = btn.parentElement;
