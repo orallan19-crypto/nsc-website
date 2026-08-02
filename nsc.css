@@ -1121,7 +1121,9 @@ section {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .brain-svg:hover {
   transform: scale(1.05);
@@ -2030,17 +2032,22 @@ footer {
   gap: 10px;
 }
 .fsoc {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border: 1px solid var(--border);
-  border-radius: 7px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 0.9rem;
   color: var(--muted);
   transition: all 0.2s;
+}
+.fsoc img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  display: block;
 }
 .fsoc:hover {
   border-color: var(--pur);
